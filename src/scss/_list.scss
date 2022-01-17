@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+ul {
+  list-style: none;
+  display: block;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+li,
+.item {
+  box-sizing: border-box;
+}
+
+li {
+  padding: 0.5em 1rem;
+  display: list-item;
+}

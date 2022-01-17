@@ -1,0 +1,80 @@
+/**
+ * Add the correct system-ui font-family in Firefox.
+ */
+
+@font-face {
+  font-family: system-ui;
+  src: local('.AppleSystemUIFont'), local('Segoe UI'), local('Ubuntu'),
+    local('Roboto-Regular'), local('HelveticaNeue');
+}
+
+@font-face {
+  font-family: system-ui;
+  font-style: italic;
+  src: local('.AppleSystemUIFont'), local('Segoe UI Italic'),
+    local('Ubuntu-Italic'), local('Roboto-Italic'),
+    local('HelveticaNeue-Italic');
+}
+
+@font-face {
+  font-family: system-ui;
+  font-weight: bold;
+  src: local('.AppleSystemUIFont'), local('Segoe UI Bold'), local('Ubuntu-Bold'),
+    local('Roboto-Bold'), local('HelveticaNeue-Bold');
+}
+
+@font-face {
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: bold;
+  src: local('.AppleSystemUIFont'), local('Segoe UI Bold Italic'),
+    local('Ubuntu-BoldItalic'), local('Roboto-BoldItalic'),
+    local('HelveticaNeue-BoldItalic');
+}
+
+/*
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+*/
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+html {
+  font-family: system-ui, /* macOS 10.11-10.12 */ -apple-system,
+    /* Windows 6+ */ Segoe UI, /* Android 4+ */ Roboto,
+    /* Ubuntu 10.10+ */ Ubuntu, /* Gnome 3+ */ Cantarell,
+    /* KDE Plasma 5+ */ Noto Sans, /* fallback */ sans-serif,
+    /* macOS emoji */ 'Apple Color Emoji', /* Windows emoji */ 'Segoe UI Emoji',
+    /* Windows emoji */ 'Segoe UI Symbol', /* Linux emoji */ 'Noto Color Emoji';
+  // font-family: 'Noto Sans', sans-serif;
+  cursor: default;
+  line-height: 1.5;
+  tab-size: 4;
+  // word-break: break-all;
+  // overflow-y: scroll;
+  // width: 100%;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family:
+    /* macOS 10.10+ */ Menlo, /* Windows 6+ */ Consolas,
+    /* Android 4+ */ Roboto Mono, /* Ubuntu 10.10+ */ Ubuntu Monospace,
+    /* KDE Plasma 5+ */ Noto Mono, /* KDE Plasma 4+ */ Oxygen Mono,
+    /* Linux/OpenOffice fallback */ Liberation Mono, /* fallback */ monospace;
+}
+
+body {
+  margin: 0;
+  color: hsl(0deg 0% 25%);
+  font-size: 16px;
+}

@@ -1,0 +1,79 @@
+@use 'variables' as *;
+
+// push in _[file].scss
+// example: _arrows.scss
+// example: _text-colors.scss
+
+.no-print {
+  @media print {
+    display: none;
+  }
+}
+
+.only-print {
+  @media screen {
+    display: none;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  margin-bottom: 1.5rem;
+  // max-width: 100%;
+  padding: 0 1.5rem;
+  max-width: $container-max-width;
+  margin: 0 auto;
+
+  @media screen and (max-width: $one-column-bp) {
+    max-width: $column-max-width;
+    // width: 100%;
+  }
+
+  @media screen and (max-width: 560px) {
+    padding: 0 0.75rem;
+  }
+
+  @media print {
+    padding: 0 0.25rem;
+  }
+}
+
+.unit {
+  text-transform: lowercase;
+  font-size: smaller;
+}
+
+.arrow {
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  visibility: hidden;
+  opacity: 0;
+}
+
+em,
+.em {
+  color: $secondary;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.danger {
+  color: $danger;
+}

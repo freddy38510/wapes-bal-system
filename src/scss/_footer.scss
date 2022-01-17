@@ -1,0 +1,79 @@
+@use 'variables' as *;
+
+.page-footer {
+  // display: flex;
+  font-size: 0.75rem;
+  padding: 2.25rem 0 1.5rem 0;
+  background: $header-bg;
+  color: #ccc;
+  // text-align: center;
+  margin: 3rem 0 0 0;
+
+  @media print {
+    background: unset;
+    color: inherit;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1.5rem;
+    margin-top: -1.5rem;
+    // padding: 0 1rem;
+
+    > div {
+      // flex: 1;
+      margin-left: 1.5rem;
+      margin-top: 1.5rem;
+
+      &:last-child {
+        font-size: 0.6875rem;
+
+        @media print {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  @media print {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  em {
+    color: #fff;
+
+    @media print {
+      color: $primary;
+    }
+    // font-weight: 600;
+  }
+
+  a {
+    color: #fff;
+    border-bottom: 1px dotted;
+    // font-weight: 500;
+    // outline: 0;
+    text-decoration: none;
+
+    svg {
+      // margin-left: 4px;
+      margin-top: -6px;
+      // margin-right: -1px;
+      height: 1em;
+      vertical-align: middle;
+      width: 1em;
+      line-height: 1;
+      fill: currentColor;
+    }
+  }
+}

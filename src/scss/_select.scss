@@ -1,0 +1,229 @@
+@use 'variables' as *;
+
+@keyframes spinAround {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.select {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  vertical-align: top;
+
+  &.height {
+    text-transform: capitalize;
+  }
+
+  select {
+    text-transform: uppercase;
+    background: $header-bg;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    max-width: 100%;
+    color: $header-color;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    align-items: center;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 0.875rem;
+    font: inherit;
+    font-weight: 600;
+    justify-content: flex-start;
+    height: 100%;
+    padding-bottom: calc(0.75em - 3px);
+    padding-left: 1.25em;
+    padding-right: 2.5em;
+    padding-top: 0.75em;
+    position: relative;
+    outline: 0;
+    box-sizing: border-box;
+    border-bottom: 3px solid $header-bg;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:hover {
+      background: scale-color($header-bg, $lightness: 3%);
+      border-bottom-color: scale-color($header-bg, $lightness: 3%);
+    }
+
+    &:focus:not(:focus-visible) {
+      border-bottom-color: $header-bg;
+      background: $header-bg;
+    }
+
+    &:focus,
+    &:focus-visible {
+      border-bottom-color: $select-focus;
+      background: scale-color($header-bg, $lightness: 3%);
+    }
+
+    /*
+    &:focus-visible {
+      border-bottom-color: $select-focus;
+      background: scale-color($header-bg, $lightness: 3%);
+    }
+    */
+
+    option {
+      background: $header-bg;
+      // color: #fff;
+    }
+  }
+
+  /*
+  &:not(:last-child) {
+    margin-right: 0.75rem;
+  }
+  */
+
+  &::after {
+    box-sizing: inherit;
+    border: 3px solid transparent;
+    border-radius: 2px;
+    border-right: 0;
+    border-top: 0;
+    content: ' ';
+    display: block;
+    height: 0.625em;
+    margin-top: -0.4375em;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    transform: rotate(-45deg);
+    // transform-origin: center;
+    width: 0.625em;
+    z-index: 999;
+  }
+
+  &:not(.is-loading)::after {
+    border-color: #fff;
+    right: 1.125em;
+
+    // z-index: 4;
+  }
+
+  &.is-loading::after {
+    margin-top: 0;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    transform: none;
+    animation: spinAround 0.5s infinite linear;
+    border: 2px solid #dbdbdb;
+    border-radius: 9999px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: '';
+    display: block;
+    height: 1em;
+    width: 1em;
+  }
+}
+
+#height {
+  text-transform: lowercase;
+  border-radius: 0 5px 0 0;
+}
+
+#position {
+  border-radius: 5px 0 0 0;
+}
+
+.blue {
+  color: #acc9f6 !important;
+}
+
+.orange {
+  color: #f0bc38 !important;
+}
+
+.green {
+  color: #67d733 !important;
+}
+
+.red {
+  color: #f69da1 !important;
+}
+
+/*
+.position {
+  .select:not(.is-loading) {
+    &::after {
+      // border-color: #c0f9d7;
+    }
+
+    &:hover::after {
+      // border-color: scale-color(#c0f9d7, $lightness: 3%);
+    }
+  }
+
+  select {
+    // color: #c0f9d7;
+
+    &:hover {
+      // color: scale-color(currentcolor, $lightness: 3%);
+    }
+  }
+}
+*/
+
+/*
+.style {
+  .select:not(.is-loading) {
+    &::after {
+      border-color: #c0dcf9;
+    }
+
+    &:hover::after {
+      border-color: scale-color(#c0dcf9, $lightness: 3%);
+    }
+  }
+
+  select {
+    color: #c0dcf9;
+
+    &:hover {
+      color: scale-color(#c0dcf9, $lightness: 3%);
+    }
+  }
+}
+
+.height {
+  .select:not(.is-loading) {
+    &::after {
+      border-color: #f9c0c0;
+    }
+
+    &:hover::after {
+      border-color: scale-color(#f9c0c0, $lightness: 3%);
+    }
+  }
+
+  select {
+    color: #f9c0c0;
+
+    &:hover {
+      color: scale-color(#f9c0c0, $lightness: 3%);
+    }
+  }
+}
+  */

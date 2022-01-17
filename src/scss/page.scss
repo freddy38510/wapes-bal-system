@@ -1,0 +1,114 @@
+@use 'variables' as *;
+@use 'card';
+@use 'list';
+@use 'table-legend';
+@use 'additional-rules';
+@use 'footer';
+
+h1 {
+  font-family: 'Quarion-Bold';
+  font-size: 2.375rem;
+  text-transform: uppercase;
+  color: $primary;
+  margin: 0.75em 0 0.165em 0;
+  line-height: 1;
+  // background-color: $primary;
+
+  @supports (-webkit-background-clip: text) or (background-clip: text) {
+    background: linear-gradient(0deg, $primary 50%, 50%, $secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  sup {
+    font-size: 1rem;
+    vertical-align: top;
+  }
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  margin: 0 0 2.25rem 0;
+  font-weight: 600;
+  color: $secondary;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  // max-width: 100%;
+  margin-left: -3rem;
+  margin-top: -1.5rem;
+
+  @media print {
+    margin-left: -1.5rem;
+    flex-wrap: nowrap;
+  }
+
+  > div {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+
+    // @media screen and (max-width: $one-column-bp) {
+    // max-width: $column-max-width;
+    // margin-left: 0;
+    // }
+    @media screen and (max-width: $one-column-bp) {
+      // max-width: $column-max-width;
+      width: 100%;
+    }
+
+    @media print {
+      margin-left: 1.5rem;
+      // flex: 1 1 auto;
+      // flex-wrap: nowrap;
+    }
+  }
+}
+
+.stats-container {
+  // max-width: 100%;
+  // flex: 0 1 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  /* flex-grow: 1; */
+  /* flex-basis: 50%; */
+  // max-width: 370px;
+  // min-width: 0;
+  // width: 100%;
+
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 1px 5px, rgb(0 0 0 / 14%) 0px 2px 2px,
+    rgb(0 0 0 / 12%) 0px 3px 1px -2px;
+
+  @media screen and (max-width: $overflow-max-width) {
+    overflow: hidden;
+  }
+
+  @media print {
+    flex-grow: 2;
+    flex-shrink: 0;
+  }
+}
+
+aside {
+  /*
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  */
+  margin-top: 1.5rem;
+
+  @media print {
+    flex-grow: 0;
+    flex-shrink: 2;
+  }
+}

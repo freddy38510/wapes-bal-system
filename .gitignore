@@ -1,0 +1,24 @@
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# Local Vercel folder
+.vercel
+
+data/*
+!data/.gitkeep
+public
+stats.html
+vercel.json

@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+.additional-rules {
+  ul {
+    list-style: inside square !important;
+  }
+
+  li > ul {
+    padding: 0.25em 0 0 1.5em;
+
+    li {
+      padding: 0.5em 0 0.5em 1em;
+      font-size: small;
+      color: $danger;
+    }
+
+    li:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  .item {
+    display: inline;
+    color: #404040;
+  }
+}

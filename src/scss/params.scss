@@ -1,0 +1,54 @@
+@use 'variables' as *;
+@use 'select';
+
+:host {
+  // background-color: rgb(46, 57, 62);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+
+  @media screen and (max-width: $overflow-max-width) {
+    overflow: auto;
+  }
+}
+
+header {
+  display: flex;
+
+  p {
+    margin: 0;
+  }
+
+  .item {
+    flex: 1 0 33%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    // min-width: 33%;
+    @media screen and (max-width: $column-max-width) {
+      flex: 1 0 auto;
+    }
+
+    &:not(:last-child) {
+      .select::before {
+        content: '';
+        position: absolute;
+        background-color: #5a5a5a;
+        width: 1px;
+        // height: 100%;
+        top: 0px;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+
+        // border-right: 1px solid #5a5a5a;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+.table-legend {
+  ul {
+    list-style: none;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    box-sizing: border-box;
+    margin-right: 1em;
+    flex: 0 0 auto;
+
+    &.MKII-rect {
+      border: 2px solid $mkII-color;
+      height: 20px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.table-legend .icon .arrow {
+  height: 0.5625rem;
+  width: 0.5625rem;
+}

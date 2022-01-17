@@ -1,0 +1,12 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "github": {
+    "enabled": false
+  },
+  "build": {
+    "env": {
+      "NODEJS_HELPERS": "0"
+    }
+  }
+}

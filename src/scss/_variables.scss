@@ -1,0 +1,41 @@
+$select-bg: #fff;
+$select-border-color: #ddd;
+$select-focus: #66b5ff;
+
+$header-bg: #283948; //#2e393e;
+$header-color: #ebebeb;
+
+$tag-bg: #e9b216;
+$tag-color: #050505;
+
+$border: adjust-color(#c2c2c2, $alpha: -0.6%);
+
+$table-border-color: rgba(0, 0, 0, 0.24);
+$table-loading-color: aqua;
+
+$tr-hover-bg: rgb(33 212 243 / 28%);
+
+$th-col-bg: #2b4a5a;
+$th-col-color: #fff;
+
+$th-rowgroup-bg: #fafafa;
+$th-row-hover-bg: rgb(33 212 243 / 28%);
+
+$primary: #10395f;
+$secondary: #284d6f;
+$grey: #eee;
+
+$danger: #a80b0b;
+$success: #085e08;
+
+$mkII-color: $secondary;
+
+$card-bg: #fafafa;
+
+/* breakpoints */
+$one-column-bp: 876px;
+$column-max-width: 360px;
+$container-max-width: 820px;
+$ellipsis-max-width: 400px;
+$overflow-max-width: 319px;
+$table-min-width: 296px;

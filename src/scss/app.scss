@@ -1,0 +1,42 @@
+@use 'variables' as *;
+@use 'normalize';
+@use 'animations';
+
+@media print {
+  @page {
+    size: A4;
+  }
+
+  body {
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+/*
+html {
+  overflow-y: scroll;
+}
+*/
+
+@font-face {
+  font-family: 'Quarion-Bold';
+  // font-display: block;
+  font-display: optional;
+  // font-display: auto;
+  src: url('./QuarionTest-Bold-subset.woff2') format('woff2'),
+    url('./QuarionTest-Bold-subset.woff') format('woff');
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+  // background: $header-bg;
+  // min-height: 100vh;
+  scroll-behavior: smooth;
+  // text-rendering: optimizeSpeed;
+}
