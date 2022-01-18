@@ -20,6 +20,9 @@
     "safari 11",
     "ie 11"
   ],
+  "engines": {
+    "node": "^12 || ^14"
+  },
   "dependencies": {
     "@googleapis/sheets": "0.3.0",
     "dotenv": "14.1.0",
