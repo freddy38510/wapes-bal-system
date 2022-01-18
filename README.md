@@ -105,3 +105,25 @@
   ```
 
 - Open http://localhost:3000 and take benefit from live reloading during development.
+
+## Deploying (preview/production)
+
+Generate fresh data and build the application for production with [Content Security Policy](https://developer.mozilla.org/fr/docs/Web/HTTP/CSP):
+
+```bash
+yarn build
+```
+
+Then deploy it to Vercel:
+
+- Preview deployment
+
+  ```bash
+  yarn vercel
+  ```
+
+- Production deployment
+
+  ```bash
+  yarn vercel --prod
+  ```
