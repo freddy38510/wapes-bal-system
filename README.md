@@ -60,6 +60,36 @@
 
 - Fill `.env.sample` file with your [Google service account keys](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) and rename it to `.env`.
 
+- Link and setup your Vercel project by overwriting settings as follows:
+
+  - Build Command: press <kbd>enter</kbd>
+  - Development Command: `yarn dev`
+
+  ```console
+  $ yarn vercel link
+  Vercel CLI 23.1.3-canary.72 — https://vercel.com/feedback
+  > No existing credentials found. Please log in:
+  > Log in to Vercel github
+  > Success! GitHub authentication complete for freddyescobar@hotmail.fr
+  ? Set up “~/wapes-bal-system”? [Y/n] y
+  ? Which scope should contain your project? freddy38510
+  ? What’s your project’s name? wapes-bal-system
+  ? In which directory is your code located? ./
+  No framework detected. Default Project Settings:
+  - Build Command: `npm run vercel-build` or `npm run build`
+  - Output Directory: `public` if it exists, or `.`
+  - Development Command: None
+  ? Want to override the settings? [y/N] y
+  ? Which settings would you like to overwrite (select multiple)? Build Command, Development Command
+  ? What's your Build Command?
+  ? What's your Development Command? yarn dev
+  ✅ Linked to freddy38510/wapes-bal-system (created .vercel)
+  ```
+
+  You can also edit your project settings using the Vercel dashboard:
+
+  ![Screenshot showing Vercel project settings](./vercel-project-settings.png)
+
 ## Developing
 
 - Fetch and store the data from the WAPES Google Sheet to json files:
