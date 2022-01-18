@@ -115,7 +115,7 @@ const baseConfig = createSpaConfig({
         ),
       // replace preload by modulepreload
       (html) =>
-        html.replaceAll('rel="preload" href="', 'rel="modulepreload" href="'),
+        html.replace(/rel="preload" href="/g, 'rel="modulepreload" href="'),
     ],
   },
   polyfillsLoader: {
