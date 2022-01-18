@@ -5,7 +5,7 @@
 ## Requirements
 
 - A [Google Service Account](https://cloud.google.com/iam/docs/service-accounts) with granted permissions to read the [WAPES Google Sheet](https://docs.google.com/spreadsheets/d/1c89tdesdBy3P6qpY-5jmuiAIUX_sB44B4GyhpXFKYD8)
-- [Node.js](https://nodejs.org/en/) 12 or higher
+- [Node.js](https://nodejs.org/en/) 12 or 14
 - [Git](https://git-scm.com/)
 - [Yarn v1](https://classic.yarnpkg.com/lang/en/)
 
