@@ -9,6 +9,44 @@
 - [Git](https://git-scm.com/)
 - [Yarn v1](https://classic.yarnpkg.com/lang/en/)
 
+## Project Structure
+
+    .
+    ├── api/
+    │   ├── bal.js            # Nodejs Serverless Function
+    ├── config/
+    │   ├── params.js         # Positions and styles parameters
+    ├── data/                 # Contains generated data and timestamp
+    ├── google-sheet/         # Contains Google Sheet API logic
+    │   ├── constants.js
+    │   ├── sheet-service.js
+    │   ├── Sheet-stats.js    # Fetch and parse data from Google Sheet API
+    ├── public/               # Contains compiled assets for Frontend
+    ├── scripts/
+    │   ├── generate-data.js  # Generate stats data needed by Serverless Function
+    │   ├── set-csp.js        # Write Content Security Policy hashes to vercel.json file
+    ├── serverless/           # Business Logic of Serverless Functions
+    │   ├── Bal.js            # Calculate bal players stats
+    │   ├── MKII-indexes.js
+    ├── src/                  # Contains Frontend sources
+    ├── static/               # Contains static assets to be served in Frontend
+    ├── .env.sample
+    ├── .eslintrc.js
+    ├── .gitignore
+    ├── .nvmrc
+    ├── .prettierrc.json
+    ├── .vercelignore
+    ├── babel.config.js
+    ├── LICENSE
+    ├── package.json
+    ├── postcss-csp-style-src-hash.js # postcss plugin to generate CSP styles hashes
+    ├── postcss.config.js
+    ├── README.md
+    ├── rollup.config.js
+    ├── vercel.build.json
+    ├── vercel.dev.json
+    └── yarn.lock
+
 ## Installing
 
 - Clone the repository and install the dependencies:
