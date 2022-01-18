@@ -20,10 +20,9 @@ import postcssPlugin from 'rollup-plugin-postcss';
 import litcss from 'rollup-plugin-lit-css';
 import strip from '@rollup/plugin-strip';
 import watchPlugin from 'rollup-plugin-watch';
-import serve from 'rollup-plugin-serve';
+import serve from 'rollup-plugin-serve2';
 import livereload from 'rollup-plugin-livereload';
-import summary from 'rollup-plugin-summary';
-import { visualizer } from 'rollup-plugin-visualizer';
+import filesize from 'rollup-plugin-filesize';
 
 const watch = process.env.ROLLUP_WATCH;
 const production = process.env.NODE_ENV !== 'development';
@@ -246,8 +245,7 @@ export default merge(baseConfig, {
           },
         },
       }),
-    summary(),
-    production && visualizer({ sourcemap: true }),
+    production && filesize({ showMinifiedSize: false }),
     watch &&
       watchPlugin({
         dir: './static',
@@ -258,12 +256,13 @@ export default merge(baseConfig, {
         open: false,
         contentBase: 'public',
         port: process.env.PORT || 4000,
+        verbose: !process.env.PORT,
       }),
     watch &&
       livereload({
         watch: ['public', 'api', 'serverless'],
-        verbose: true,
-        delay: 200,
+        verbose: false,
+        delay: 300,
       }),
   ],
 });
