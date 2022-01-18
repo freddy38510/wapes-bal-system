@@ -44,7 +44,7 @@
     ├── postcss.config.js
     ├── README.md
     ├── rollup.config.js
-    ├── vercel.build.json
+    ├── vercel.json
     ├── vercel.dev.json
     └── yarn.lock
 

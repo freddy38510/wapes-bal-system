@@ -84,11 +84,11 @@ function generateHashesFromHtml(document) {
 }
 
 function setCSP() {
-  const vercelConf = readJson('./vercel.build.json');
+  const vercelConf = readJson('./vercel.json');
   const hashes = readJson('./data/csp-hashes.json');
 
   let idx;
-  // let idx2;
+  let idx2;
 
   vercelConf.headers.forEach(({ source }, index) => {
     if (source === '/') {
@@ -96,26 +96,12 @@ function setCSP() {
     }
   });
 
-  vercelConf.headers[idx].headers.push({
-    key: 'Content-Security-Policy',
-    value: `object-src 'none'; base-uri 'self'; script-src 'self' ${hashes[
-      'script-src'
-    ].join(
-      ' '
-    )} 'strict-dynamic' https: 'unsafe-inline'; style-src 'self' ${hashes[
-      'style-src'
-    ].join(' ')} https: 'unsafe-inline';`,
-  });
-
-  /*
   vercelConf.headers[idx].headers.forEach(({ key }, index) => {
     if (key === 'Content-Security-Policy') {
       idx2 = index;
     }
   });
-  */
 
-  /*
   vercelConf.headers[idx].headers[
     idx2
   ].value = `object-src 'none'; base-uri 'self'; script-src 'self' ${hashes[
@@ -125,7 +111,6 @@ function setCSP() {
   )} 'strict-dynamic' https: 'unsafe-inline'; style-src 'self' ${hashes[
     'style-src'
   ].join(' ')} https: 'unsafe-inline';`;
-  */
 
   const data = JSON.stringify(vercelConf, null, 2);
   fs.writeFileSync('./vercel.json', data, 'utf-8');
