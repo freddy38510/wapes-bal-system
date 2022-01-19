@@ -12,41 +12,45 @@
 
 ## Project Structure
 
-    .
-    ├── api/
-    │   ├── bal.js            # Nodejs Serverless Function
-    ├── config/
-    │   ├── params.js         # Positions and styles parameters
-    ├── data/                 # Contains generated data and timestamp
-    ├── google-sheet/         # Contains Google Sheet API logic
-    │   ├── constants.js
-    │   ├── sheet-service.js
-    │   ├── Sheet-stats.js    # Fetch and parse data from Google Sheet API
-    ├── public/               # Contains compiled assets for Frontend
-    ├── scripts/
-    │   ├── generate-data.js  # Generate stats data needed by Serverless Function
-    │   ├── set-csp.js        # Write Content Security Policy hashes to vercel.json file
-    ├── serverless/           # Business Logic of Serverless Functions
-    │   ├── Bal.js            # Calculate bal players stats
-    │   ├── MKII-indexes.js
-    ├── src/                  # Contains Frontend sources
-    ├── static/               # Contains static assets to be served in Frontend
-    ├── .env.sample
-    ├── .eslintrc.js
-    ├── .gitignore
-    ├── .nvmrc
-    ├── .prettierrc.json
-    ├── .vercelignore
-    ├── babel.config.js
-    ├── LICENSE
-    ├── package.json
-    ├── postcss-csp-style-src-hash.js # postcss plugin to generate CSP styles hashes
-    ├── postcss.config.js
-    ├── README.md
-    ├── rollup.config.js
-    ├── vercel.json
-    ├── vercel.dev.json
-    └── yarn.lock
+    📦wapes-bal-system
+     ┣ 📂api
+     ┃ ┗ 📜bal.js --> (Nodejs Serverless Function)
+     ┣ 📂config
+     ┃ ┗ 📜params.js --> (Positions and styles parameters)
+     ┣ 📂data --> (Contains generated data and timestamp)
+     ┣ 📂google-sheet
+     ┃ ┣ 📜Sheet-stats.js
+     ┃ ┣ 📜constants.js
+     ┃ ┗ 📜sheet-service.js --> (Fetch and parse data from Google Sheet API)
+     ┣ 📂public --> (Contains distributables compiled assets for Frontend)
+     ┣ 📂scripts
+     ┃ ┣ 📜generate-data.js --> (Generate stats data needed by Serverless Function)
+     ┃ ┗ 📜set-csp.js --> (Write Content Security Policy hashes to vercel.json file)
+     ┣ 📂serverless --> (Business Logic of Serverless Functions)
+     ┃ ┣ 📜Bal.js --> (Calculate bal players stats)
+     ┃ ┗ 📜MKII-indexes.js
+     ┣ 📂src --> (Contains Frontend sources)
+     ┃ ┣ 📂js
+     ┃ ┣ 📂scss
+     ┃ ┗ 📜index.html
+     ┣ 📂static --> (Contains static assets to be served in Frontend)
+     ┣ 📜.env.sample
+     ┣ 📜.eslintrc.js
+     ┣ 📜.gitignore
+     ┣ 📜.nvmrc
+     ┣ 📜.prettierrc.json
+     ┣ 📜.vercelignore
+     ┣ 📜CHANGELOG.md
+     ┣ 📜LICENSE
+     ┣ 📜README.md
+     ┣ 📜babel.config.js
+     ┣ 📜package.json
+     ┣ 📜postcss-csp-style-src-hash.js --> (postcss plugin to generate CSP styles hashes)
+     ┣ 📜postcss.config.js
+     ┣ 📜rollup.config.js
+     ┣ 📜vercel.dev.json
+     ┣ 📜vercel.json
+     ┗ 📜yarn.lock
 
 ## Installing
 
@@ -61,9 +65,6 @@
 - Fill `.env.sample` file with your [Google service account keys](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) and rename it to `.env`.
 
 - Link and setup your Vercel project by overwriting settings as follows:
-
-  - Build Command: press <kbd>enter</kbd>
-  - Development Command: `yarn dev`
 
   ```console
   $ yarn vercel link
@@ -85,6 +86,11 @@
   ? What's your Development Command? yarn dev
   ✅ Linked to freddy38510/wapes-bal-system (created .vercel)
   ```
+
+  Settings:
+
+  - Build Command: press <kbd>enter</kbd>
+  - Development Command: `yarn dev`
 
   You can also edit your project settings using the Vercel dashboard:
 
