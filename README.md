@@ -114,22 +114,22 @@
 
 ## Deploying (preview/production)
 
-Generate fresh data and build the application for production with [Content Security Policy](https://developer.mozilla.org/fr/docs/Web/HTTP/CSP):
-
-```bash
-yarn build
-```
-
-Then deploy it to Vercel:
-
-- Preview deployment
+- Generate fresh data and build the application for production with [Content Security Policy](https://developer.mozilla.org/fr/docs/Web/HTTP/CSP):
 
   ```bash
-  yarn vercel
+  yarn build
   ```
 
-- Production deployment
+- Deploy it to Vercel:
 
-  ```bash
-  yarn vercel --prod
-  ```
+  - Preview deployment
+
+    ```bash
+    yarn vercel
+    ```
+
+  - Production deployment
+
+    ```bash
+    yarn vercel --prod
+    ```
