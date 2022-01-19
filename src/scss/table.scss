@@ -328,6 +328,7 @@ table.loading {
 .vertical-text {
   transform: rotate(270deg);
   display: block;
+  cursor: vertical-text;
 
   abbr {
     text-decoration: none;
