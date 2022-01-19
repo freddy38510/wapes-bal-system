@@ -152,7 +152,7 @@ table {
     background-color: $th-rowgroup-bg;
     font-weight: 500;
     color: rgb(38, 38, 38);
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 
     &:nth-of-type(4) {
       padding-right: 1rem;
@@ -169,8 +169,8 @@ table {
     font-weight: 500;
     max-width: 40px;
     width: 40px;
-
-    letter-spacing: 4px;
+    color: rgb(38, 38, 38);
+    letter-spacing: 3px;
     box-sizing: border-box;
 
     // pointer-events: none; // do not highlight row
