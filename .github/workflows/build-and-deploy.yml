@@ -1,11 +1,11 @@
-name: Deploy CI
+name: Build and Deploy CI
 on:
   push:
     branches: [master]
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     if: "contains(github.event.head_commit.message, 'chore(release)')"
     steps:
