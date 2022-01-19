@@ -1,6 +1,6 @@
 {
   "name": "wapes-bal-system",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "WAPES BAL system web application for the WAPES League community",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
