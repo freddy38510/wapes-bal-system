@@ -11,6 +11,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Set Nodejs version
+        uses: actions/setup-node@v2
+        with:
+          node-version: "lts/fermium"
+          cache: "yarn"
       - name: Install Deps
         uses: borales/actions-yarn@v2.3.0
         with:
