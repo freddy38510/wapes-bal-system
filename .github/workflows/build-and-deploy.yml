@@ -16,6 +16,14 @@ jobs:
         with:
           node-version: "lts/fermium"
           cache: "yarn"
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_GOOGLE_PRIVATE_KEY: ${{secrets.GOOGLE_PRIVATE_KEY}}
+          envkey_GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL}}
+          envkey_NODEJS_HELPERS: 0
+          directory: "./"
+          file_name: ".env"
       - run: yarn install
       - run: yarn build
       - name: Deploy to Vercel
