@@ -11,22 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ (github.event_name == 'workflow_dispatch') || (contains(github.event.head_commit.message, 'chore(release)')) }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Set Nodejs version
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
           node-version: "lts/fermium"
           cache: "yarn"
-      - name: Install Deps
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install # will run `yarn install` command
-      - name: Build
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: build # will run `yarn build` command
-      - name: Deploy to Vercel Action
+      - run: yarn install
+      - run: yarn build
+      - name: Deploy to Vercel
         uses: BetaHuhn/deploy-to-vercel-action@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
