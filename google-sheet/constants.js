@@ -213,13 +213,13 @@ module.exports.AVG_WEIGHT_COLUMN = {
 
 module.exports.MAX_OVR = {
   GK: 78,
-  CB: 73,
-  'L/RB': 75,
-  DMF: 75,
-  CMF: 74,
-  AMF: 73,
-  'L/RMF': 73,
-  'L/RWF': 73,
-  SS: 73,
-  CF: 73,
+  CB: 75,
+  'L/RB': 77,
+  DMF: 77,
+  CMF: 76,
+  AMF: 75,
+  'L/RMF': 75,
+  'L/RWF': 75,
+  SS: 75,
+  CF: 75,
 };

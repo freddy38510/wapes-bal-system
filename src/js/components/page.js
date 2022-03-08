@@ -24,7 +24,7 @@ export default class Page extends LitElement {
 
   render() {
     return html`
-      <h1 class="text-center no-print">WAPES BAL system <sup>v3</sup></h1>
+      <h1 class="text-center no-print">WAPES BAL system <sup>v3.1</sup></h1>
       <p class="subtitle text-center no-print">Create your Legend</p>
       <main class="container">
         <article>
