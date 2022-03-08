@@ -16,8 +16,8 @@ export default (position) =>
         <li>
           <span class="item">
             ${position !== 'GK'
-              ? html`Up to <strong>5</strong> skill cards`
-              : html`Up to <strong>3</strong> GK + <strong>2</strong> field player skill cards</li>`}
+              ? html`Up to <strong>6</strong> skill cards`
+              : html`Up to <strong>3</strong> GK + <strong>3</strong> field player skill cards</li>`}
           </span>
         </li>
         <li>
