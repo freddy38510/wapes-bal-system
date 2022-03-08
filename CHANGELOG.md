@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/freddy38510/wapes-bal-system/compare/v1.0.4...v1.1.0) (2022-03-08)
+
+
+### Features
+
+* update to bal system v3.1 ([200ad82](https://github.com/freddy38510/wapes-bal-system/commit/200ad82805ca7f45a6f6a88b2729cf7afcb57b5f))
+
+
+### Bug Fixes
+
+* **deps:** update dependency dotenv to v16.0.0 ([b409df9](https://github.com/freddy38510/wapes-bal-system/commit/b409df975386913a696905060e1f19d1cea4fb27))
+* **deps:** update dependency lit to v2.2.0 ([5887141](https://github.com/freddy38510/wapes-bal-system/commit/5887141229f4588dbacbc1253e1f6d06d3ebad37))
+
 ### [1.0.4](https://github.com/freddy38510/wapes-bal-system/compare/v1.0.3...v1.0.4) (2022-01-19)
 
 
