@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/freddy38510/wapes-bal-system/compare/v1.1.0...v1.2.0) (2022-03-08)
+
+
+### Features
+
+* **additional-rules:** update number of skill cards for bal system v3.1 ([b9335ef](https://github.com/freddy38510/wapes-bal-system/commit/b9335ef5f45f4eb682481d016070ff7c5f41d859))
+
 ## [1.1.0](https://github.com/freddy38510/wapes-bal-system/compare/v1.0.4...v1.1.0) (2022-03-08)
 
 
