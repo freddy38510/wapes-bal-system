@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@googleapis/sheets": "0.3.0",
-    "dotenv": "14.2.0",
+    "dotenv": "16.0.0",
     "lit": "2.1.1"
   },
   "devDependencies": {
