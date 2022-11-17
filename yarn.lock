@@ -4336,6 +4336,11 @@ html-minifier@^4.0.0:
     relateurl "^0.2.7"
     uglify-js "^3.5.1"
 
+html-to-ast@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/html-to-ast/-/html-to-ast-0.0.6.tgz#d3c2b84d7e1dd38b3a1295e2ea5c0600964c64c6"
+  integrity sha512-gAq/8l6laJ8cTufIhh9lMvonShc8xBzAth+t7yK6oDla8rMVGKyYqToa7HgZyPKyi1KTX+HBTvQg2uQ3wc7Q9w==
+
 http-cache-semantics@^4.0.0, http-cache-semantics@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.0.tgz#49e91c5cbf36c9b94bcfcd71c23d5249ec74e390"
@@ -6907,10 +6912,13 @@ rollup-plugin-hoist-import-deps@1.1.0:
     estree-walker "^2.0.1"
     magic-string "^0.25.7"
 
-rollup-plugin-inline-svg@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-inline-svg/-/rollup-plugin-inline-svg-2.0.0.tgz#18df215d429f2b868b59fc398ab3c776fc2fe901"
-  integrity sha512-lU1bKuKtej+zf3ZJuOyLNfEelKcw2y9dRhXo5Gs1Fn43EnL6HtpNFIIIepHGxnQZL74oVXL1V9oNFuT8MHnQtQ==
+rollup-plugin-inline-svg@3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-inline-svg/-/rollup-plugin-inline-svg-3.0.3.tgz#86b84434f0f10c7d5a5fd5f22af641d0e2983a63"
+  integrity sha512-f4JVH8jPnd32QREFvXqizH8m6/zCXtJXNRHQ7mQdCZv8bj9QZSXPSfF5ZmLgh8LGA/qK9dKmT5rAPyO1jDysyw==
+  dependencies:
+    "@rollup/pluginutils" "^4.2.1"
+    html-to-ast "^0.0.6"
 
 rollup-plugin-lit-css@4.0.0:
   version "4.0.0"
