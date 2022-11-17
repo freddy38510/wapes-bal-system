@@ -22,7 +22,7 @@
     "ie 11"
   ],
   "engines": {
-    "node": "^12 || ^14"
+    "node": "^14 || ^16"
   },
   "dependencies": {
     "@googleapis/sheets": "4.0.0",
