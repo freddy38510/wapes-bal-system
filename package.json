@@ -57,7 +57,7 @@
     "rollup-plugin-copy": "3.4.0",
     "rollup-plugin-filesize": "9.1.2",
     "rollup-plugin-hoist-import-deps": "1.1.0",
-    "rollup-plugin-inline-svg": "2.0.0",
+    "rollup-plugin-inline-svg": "3.0.3",
     "rollup-plugin-lit-css": "4.0.0",
     "rollup-plugin-livereload": "2.0.5",
     "rollup-plugin-minify-html-literals": "1.2.6",
