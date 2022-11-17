@@ -27,8 +27,12 @@ import filesize from 'rollup-plugin-filesize';
 const watch = process.env.ROLLUP_WATCH;
 const production = process.env.NODE_ENV !== 'development';
 
-const { plugins } = postcssrc.sync();
-const processor = postcss(plugins);
+let processor;
+
+async function getPostCssRcProcessor() {
+  const { plugins } = await postcssrc();
+  processor = postcss(plugins);
+}
 
 const getFiles = (bundle) => {
   const files = Object.values(bundle).filter(
@@ -227,6 +231,10 @@ export default merge(baseConfig, {
           style: production ? 'compressed' : 'expanded',
           sourceMap: false,
         });
+
+        if (!processor) {
+          await getPostCssRcProcessor();
+        }
 
         const { css } = await processor.process(compiledCss, {
           from: filePath,
