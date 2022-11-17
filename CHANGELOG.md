@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/freddy38510/wapes-bal-system/compare/v1.2.0...v1.2.1) (2022-11-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @googleapis/sheets to v4 ([#14](https://github.com/freddy38510/wapes-bal-system/issues/14)) ([1289310](https://github.com/freddy38510/wapes-bal-system/commit/1289310ec1269f53e49877541f18bbdf4ddec4eb))
+* **style:** replace deprecated color-adjust property with print-color-adjust ([46e6802](https://github.com/freddy38510/wapes-bal-system/commit/46e6802d107b1f8005401270da4003f8f6bf5eb8))
+
 ## [1.2.0](https://github.com/freddy38510/wapes-bal-system/compare/v1.1.0...v1.2.0) (2022-03-08)
 
 
