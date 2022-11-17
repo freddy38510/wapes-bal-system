@@ -28,7 +28,7 @@ module.exports = {
         devDependencies: [
           'scripts/generate-data.js',
           'scripts/set-csp.js',
-          'rollup.config.js',
+          'rollup.config.mjs',
           'postcss.config.js',
           'postcss-csp-style-src-hash.js',
         ],

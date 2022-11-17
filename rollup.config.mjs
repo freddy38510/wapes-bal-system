@@ -196,6 +196,8 @@ baseConfig.plugins = baseConfig.plugins.filter(
     !['rollup-plugin-import-meta-assets', 'node-resolve'].includes(plugin.name)
 );
 
+console.log(minifyHTML, typeof minifyHTML);
+
 export default merge(baseConfig, {
   input: './src/index.html',
   plugins: [
@@ -246,7 +248,7 @@ export default merge(baseConfig, {
     }),
     production && strip(),
     production &&
-      minifyHTML({
+      minifyHTML.default({
         options: {
           minifyOptions: {
             minifyCSS: false,
