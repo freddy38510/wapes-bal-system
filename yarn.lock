@@ -1479,14 +1479,14 @@
     "@rollup/pluginutils" "^3.1.0"
     magic-string "^0.25.7"
 
-"@rollup/plugin-strip@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-strip/-/plugin-strip-2.1.0.tgz#04c2d2ccfb2c6b192bb70447fbf26e336379a333"
-  integrity sha512-OKlIlXMFlH4nVxq0beNSIKVw0LkpNUpVjjvfzH5OAOAR5dhLZgLZBzwYX4ifIAs18YDrreMcZH4xnKmW9fI2AQ==
+"@rollup/plugin-strip@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-strip/-/plugin-strip-3.0.1.tgz#45486508b01c2149aadbf7d47449a519285a95c4"
+  integrity sha512-mG6dHXVhNzU2i5qsS7RNtKuXf4zfDyel4G/RoT1wxaLblHeNSssjgSjWPfkp6ZhXYxFPdZQfkyZ5IpXlfTL8yQ==
   dependencies:
-    "@rollup/pluginutils" "^3.1.0"
-    estree-walker "^2.0.1"
-    magic-string "^0.25.7"
+    "@rollup/pluginutils" "^5.0.1"
+    estree-walker "^2.0.2"
+    magic-string "^0.26.4"
 
 "@rollup/pluginutils@^3.0.8", "@rollup/pluginutils@^3.1.0":
   version "3.1.0"
@@ -1513,7 +1513,7 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
-"@rollup/pluginutils@^5.0.2":
+"@rollup/pluginutils@^5.0.1", "@rollup/pluginutils@^5.0.2":
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-5.0.2.tgz#012b8f53c71e4f6f9cb317e311df1404f56e7a33"
   integrity sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==
@@ -5164,6 +5164,13 @@ magic-string@^0.25.0, magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.4"
 
+magic-string@^0.26.4:
+  version "0.26.7"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.26.7.tgz#caf7daf61b34e9982f8228c4527474dac8981d6f"
+  integrity sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==
+  dependencies:
+    sourcemap-codec "^1.4.8"
+
 make-dir@^3.0.0, make-dir@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-3.1.0.tgz#415e967046b3a7f1d185277d84aa58203726a13f"
@@ -7196,7 +7203,7 @@ source-map@~0.7.2:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.7.3.tgz#5302f8169031735226544092e64981f751750383"
   integrity sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
 
-sourcemap-codec@^1.4.4:
+sourcemap-codec@^1.4.4, sourcemap-codec@^1.4.8:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
