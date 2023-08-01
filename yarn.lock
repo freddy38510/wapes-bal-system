@@ -1148,10 +1148,10 @@
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
   integrity sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==
 
-"@googleapis/sheets@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@googleapis/sheets/-/sheets-4.0.0.tgz#c24d2c3d786d8b0b9c72710bd7061cc65295cbd5"
-  integrity sha512-K/zdavjI80ofgT7p+5kD5Se3eTuPFJmup19IONkGdXQuuFKgh7HR3txoX2BUg5wX4b+oNW9XcXcfE3yQPWO+8w==
+"@googleapis/sheets@5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@googleapis/sheets/-/sheets-5.0.1.tgz#3186ce75c7a1b695410e5a8945b7957bdfbc5218"
+  integrity sha512-DbbPi2kasYR6ETIPJf7JEHAPBOaqFuirQN4WCTS/DQiUHzQzFLX/xI2tiMCabm0Eop5niIDVh7lsVQLUU9XCTw==
   dependencies:
     googleapis-common "^6.0.3"
 

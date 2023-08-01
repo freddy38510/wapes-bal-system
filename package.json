@@ -25,7 +25,7 @@
     "node": "^14 || ^16 || ^18.0.0"
   },
   "dependencies": {
-    "@googleapis/sheets": "4.0.0",
+    "@googleapis/sheets": "5.0.1",
     "dotenv": "16.0.3",
     "lit": "2.4.1"
   },
