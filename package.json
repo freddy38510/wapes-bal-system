@@ -68,5 +68,9 @@
     "sass": "1.64.2",
     "standard-version": "9.5.0",
     "vercel": "31.2.2"
+  },
+  "resolutions": {
+    "string-width": "^4.0.0",
+    "wrap-ansi": "^8.0.0"
   }
 }
