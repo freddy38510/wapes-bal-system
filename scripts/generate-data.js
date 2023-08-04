@@ -32,12 +32,12 @@ async function getData(position) {
       MKII,
       styles,
     });
-  } catch (error) {
-    console.error(error);
-
+  } catch (e) {
     console.error(`Could not fetch data for position ${position}`);
 
-    throw error;
+    process.exitCode = 1;
+
+    throw e;
   }
 }
 
@@ -53,9 +53,9 @@ async function generate(position) {
   try {
     await writeFile(filePath, data);
   } catch (e) {
-    console.error(e);
-
     console.error(`Could not write data for position ${position}`);
+
+    process.exitCode = 1;
 
     throw e;
   }
@@ -85,6 +85,4 @@ async function generate(position) {
     join(__dirname, '../data/timestamp.js'),
     `export default '${stamp}';`
   );
-
-  process.exit(0);
 })();
