@@ -1,6 +1,22 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [2.0.0](https://github.com/freddy38510/wapes-bal-system/compare/v1.2.1...v2.0.0) (2023-08-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* drop support for Node.js 14
+
+* drop support for Node.js 14 ([b3d3f3f](https://github.com/freddy38510/wapes-bal-system/commit/b3d3f3f5205ed95c525a542b0350edfeca21e7d0))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @googleapis/sheets to v5 ([#38](https://github.com/freddy38510/wapes-bal-system/issues/38)) ([5167cce](https://github.com/freddy38510/wapes-bal-system/commit/5167cceb47c92358c4f77b6156372eb6e2d422cf))
+* **generate-data:** terminate process properly ([f26a4e5](https://github.com/freddy38510/wapes-bal-system/commit/f26a4e502fd1669e02ba00ba06bc39977a93618c))
+* **google-sheet:** increase timeout ([0e65dba](https://github.com/freddy38510/wapes-bal-system/commit/0e65dba2bf89b5f04236e6dbecb0fe16babbdf50))
 
 ### [1.2.1](https://github.com/freddy38510/wapes-bal-system/compare/v1.2.0...v1.2.1) (2022-11-17)
 
