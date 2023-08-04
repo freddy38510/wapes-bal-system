@@ -67,6 +67,6 @@
     "rollup-plugin-watch": "1.0.2",
     "sass": "1.64.2",
     "standard-version": "9.5.0",
-    "vercel": "28.20.0"
+    "vercel": "31.2.2"
   }
 }
