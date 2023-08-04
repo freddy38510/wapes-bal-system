@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 const fs = require('fs');
 const { join } = require('path');
+const crypto = require('crypto');
 const { parse } = require('parse5');
 const {
   findElements,
@@ -8,7 +9,6 @@ const {
   hasAttribute,
   getTextContent,
 } = require('@web/parse5-utils');
-const crypto = require('crypto');
 
 const opts = {
   algorithm: 'sha256',
@@ -107,7 +107,7 @@ function setCSP() {
   ].value = `object-src 'none'; base-uri 'self'; script-src 'self' ${hashes[
     'script-src'
   ].join(
-    ' '
+    ' ',
   )} 'strict-dynamic' https: 'unsafe-inline'; style-src 'self' ${hashes[
     'style-src'
   ].join(' ')} https: 'unsafe-inline';`;
