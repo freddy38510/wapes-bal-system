@@ -26,7 +26,7 @@ module.exports = async () => {
   cached = sheets({
     version: 'v4',
     auth: await getAuthClient(),
-    timeout: 3000,
+    timeout: 5000,
   });
 
   return cached;
