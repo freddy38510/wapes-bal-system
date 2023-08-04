@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: "lts/gallium"
           cache: "yarn"
-      - run: yarn install
+      - run: yarn install --frozen-lockfile
       - run: yarn build
         env:
           GOOGLE_PRIVATE_KEY: ${{secrets.GOOGLE_PRIVATE_KEY}}
