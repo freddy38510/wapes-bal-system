@@ -22,7 +22,7 @@ import strip from '@rollup/plugin-strip';
 import watchPlugin from 'rollup-plugin-watch';
 import serve from 'rollup-plugin-serve2';
 import livereload from 'rollup-plugin-livereload';
-import filesize from 'rollup-plugin-filesize';
+import summary from 'rollup-plugin-summary';
 
 const watch = process.env.ROLLUP_WATCH;
 const production = process.env.NODE_ENV !== 'development';
@@ -253,7 +253,7 @@ export default merge(baseConfig, {
           },
         },
       }),
-    production && filesize({ showMinifiedSize: false }),
+    production && summary(),
     watch &&
       watchPlugin({
         dir: './static',
