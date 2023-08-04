@@ -12,7 +12,7 @@ import json from '@rollup/plugin-json';
 import minifyHTML from 'rollup-plugin-minify-html-literals';
 import inlineSvg from 'rollup-plugin-inline-svg';
 
-import Sass from 'sass';
+import * as sass from 'sass';
 import postcss from 'postcss';
 import postcssrc from 'postcss-load-config';
 
@@ -226,7 +226,7 @@ export default merge(baseConfig, {
       include: /\.scss$/i,
       exclude: ['./src/scss/app.scss'],
       transform: async (source, { filePath }) => {
-        const { css: compiledCss } = Sass.compileString(source, {
+        const { css: compiledCss } = sass.compileString(source, {
           loadPaths: ['./src/scss'],
           style: production ? 'compressed' : 'expanded',
           sourceMap: false,
