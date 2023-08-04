@@ -18,6 +18,11 @@ const {
 const { POSITIONS } = require('../config/params');
 
 module.exports = class GoogleSheetStats {
+  /**
+   *
+   * @param {import('@googleapis/sheets').sheets_v4.Sheets} sheetService
+   * @param {string} position
+   */
   constructor(sheetService, position) {
     this.sheetService = sheetService;
 

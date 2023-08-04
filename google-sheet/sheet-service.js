@@ -1,21 +1,18 @@
-const { AuthPlus, sheets } = require('@googleapis/sheets');
+const { auth, sheets } = require('@googleapis/sheets');
 require('dotenv').config();
 
+/** @type { import('@googleapis/sheets').sheets_v4.Sheets} */
 let cached;
 
-const getAuthClient = async () => {
-  const { GoogleAuth } = new AuthPlus();
-
-  const auth = new GoogleAuth({
+async function getAuthClient() {
+  return new auth.GoogleAuth({
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     credentials: {
       client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
       private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/gm, '\n'),
     },
-  });
-
-  return auth.getClient();
-};
+  }).getClient();
+}
 
 module.exports = async () => {
   if (cached) {
@@ -26,11 +23,9 @@ module.exports = async () => {
 
   // console.log('fresh Google Sheet client');
 
-  const authClient = await getAuthClient();
-
   cached = sheets({
     version: 'v4',
-    auth: authClient,
+    auth: await getAuthClient(),
     timeout: 3000,
   });
 
