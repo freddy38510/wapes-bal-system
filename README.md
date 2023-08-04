@@ -6,7 +6,7 @@
 
 - A [Google Service Account](https://cloud.google.com/iam/docs/service-accounts) with granted permissions to read the [WAPES Google Sheet](https://docs.google.com/spreadsheets/d/1c89tdesdBy3P6qpY-5jmuiAIUX_sB44B4GyhpXFKYD8)
 - A free account on [Vercel](https://vercel.com/)
-- [Node.js](https://nodejs.org/en/) 12 or 14
+- [Node.js](https://nodejs.org/en/) 16 or 18
 - [Git](https://git-scm.com/)
 - [Yarn v1](https://classic.yarnpkg.com/lang/en/)
 
