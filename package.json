@@ -71,6 +71,6 @@
   },
   "resolutions": {
     "string-width": "^4.0.0",
-    "wrap-ansi": "^7.0.0"
+    "wrap-ansi": "^8.0.0"
   }
 }
