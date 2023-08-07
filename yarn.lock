@@ -3144,6 +3144,11 @@ dynamic-import-polyfill@^0.1.1:
   resolved "https://registry.yarnpkg.com/dynamic-import-polyfill/-/dynamic-import-polyfill-0.1.1.tgz#e1f9eb1876ee242bd56572f8ed4df768e143083f"
   integrity sha512-m953zv0w5oDagTItWm6Auhmk/pY7EiejaqiVbnzSS3HIjh1FCUeK7WzuaVtWPNs58A+/xpIE+/dVk6pKsrua8g==
 
+eastasianwidth@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/eastasianwidth/-/eastasianwidth-0.2.0.tgz#696ce2ec0aa0e6ea93a397ffcf24aa7840c827cb"
+  integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
+
 ecdsa-sig-formatter@1.0.11, ecdsa-sig-formatter@^1.0.11:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz#ae0f0fa2d85045ef14a817daa3ce9acd0489e5bf"
@@ -3177,6 +3182,11 @@ electron-to-chromium@^1.4.477:
   version "1.4.484"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.484.tgz#770358eba089471c5dae5719db3a5a4fbf02bfb2"
   integrity sha512-nO3ZEomTK2PO/3TUXgEx0A97xZTpKVf4p427lABHuCpT1IQ2N+njVh29DkQkCk6Q4m2wjU+faK4xAcfFndwjvw==
+
+emoji-regex@^10.2.1:
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-10.2.1.tgz#a41c330d957191efd3d9dfe6e1e8e1e9ab048b3f"
+  integrity sha512-97g6QgOk8zlDRdgq1WxwgTMgEWGVAQvB5Fdpgc1MkNy56la5SKP9GsMXKDOdqwn90/41a8yPwIGk1Y6WVbeMQA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -6851,7 +6861,7 @@ string-to-template-literal@^2.0.0:
   resolved "https://registry.yarnpkg.com/string-to-template-literal/-/string-to-template-literal-2.0.0.tgz#0ce56bf42052d53049243e11dbf045b9ad687f9e"
   integrity sha512-AbTUWHXMyoRlTFP9qe013dfGTFq1XbcBLUoLC7PcumbJewtUwNXCvnko5cH2gZkUFC7kD2Fwxiv4YIndkU0xHA==
 
-"string-width-cjs@npm:string-width@^4.2.0", "string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.0.0, string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3, string-width@^5.1.2:
+"string-width-cjs@npm:string-width@^4.2.0":
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -6859,6 +6869,15 @@ string-to-template-literal@^2.0.0:
     emoji-regex "^8.0.0"
     is-fullwidth-code-point "^3.0.0"
     strip-ansi "^6.0.1"
+
+"string-width@^1.0.2 || 2 || 3 || 4", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3, string-width@^5.1.2, string-width@^6.0.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-6.1.0.tgz#96488d6ed23f9ad5d82d13522af9e4c4c3fd7518"
+  integrity sha512-k01swCJAgQmuADB0YIc+7TuatfNvTBVOoaUWJjTB9R4VJzR5vNWzf5t42ESVZFPS8xTySF7CAdV4t/aaIm3UnQ==
+  dependencies:
+    eastasianwidth "^0.2.0"
+    emoji-regex "^10.2.1"
+    strip-ansi "^7.0.1"
 
 string.prototype.matchall@^4.0.6:
   version "4.0.8"
