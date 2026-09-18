@@ -30,7 +30,7 @@
     "lit": "2.8.0"
   },
   "devDependencies": {
-    "@babel/core": "7.22.9",
+    "@babel/core": "7.29.6",
     "@babel/eslint-parser": "7.22.9",
     "@open-wc/building-rollup": "3.0.1",
     "@rollup/plugin-commonjs": "25.0.3",
